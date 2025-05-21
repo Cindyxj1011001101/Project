@@ -4,5 +4,30 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/Start Scenes.unity
+    guid: 9a0313a0950b9c54195da98a1cf7d70b
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/Level Select.unity
+    guid: f389a237a3e80b94c9a3074f38258b69
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/TrainScene/TrainScene1.unity
+    guid: ece8a7326b77f4e479e30b62354a891b
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/TrainScene/TrainScene2.unity
+    guid: 331144b6c1410e8439968227876bfb77
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/TrainScene/TrainScene3.unity
+    guid: b76e509bfd3dcd646866f0a0a486f728
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/TrainScene/TrainScene4.unity
+    guid: 1890c88ad52cf5040ad7936b1cc767e0
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/TrainScene/TrainScene5.unity
+    guid: b38c3588c637262449fb3d3dbf01128c
+  - enabled: 1
+    path: Assets/ML-Agents/DungeonEscape/Scenes/ShowScene/ShowScene1.unity
+    guid: 3229c3f3586cbcf4a8d31a4bc393d6fd
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
