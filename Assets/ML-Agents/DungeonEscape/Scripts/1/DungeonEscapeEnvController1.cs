@@ -114,7 +114,6 @@ public class DungeonEscapeEnvController1 : MonoBehaviour
             m_AgentGroup.GroupEpisodeInterrupted(); // 中断当前回合
             ResetScene(); // 重置场景
         }
-
         if (m_ResetTimer == KeyTimer)
         {
             CreateKey();
@@ -153,7 +152,15 @@ public class DungeonEscapeEnvController1 : MonoBehaviour
     {
         //baddieCol.gameObject.SetActive(false); // 隐藏敌人对象
         m_NumberOfRemainingPlayers--; // 减少剩余玩家数量
-        agent.gameObject.SetActive(false); // 隐藏玩家对象
+        if (m_NumberOfRemainingPlayers == 0 || agent.IHaveAKey)
+        {
+            m_AgentGroup.EndGroupEpisode(); // 结束当前回合
+            ResetScene(); // 重置场景
+        }
+        else
+        {
+            agent.gameObject.SetActive(false); // 隐藏玩家对象
+        }
         //Debug.Log($"{baddieCol.gameObject.name} ate {agent.transform.name}");
 
         // 显示墓碑
