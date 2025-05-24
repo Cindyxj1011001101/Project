@@ -4328,7 +4328,7 @@ MonoBehaviour:
   UseRandomAgentPosition: 1
   Key: {fileID: 6560354527844713900}
   Tombstone: {fileID: 6108088255477627722}
-  KeyTimer: 0
+  KeyTimer: 3
 --- !u!4 &4643237306651462
 Transform:
   m_ObjectHideFlags: 0
