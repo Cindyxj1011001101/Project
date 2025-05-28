@@ -154,7 +154,15 @@ public class DungeonEscapeEnvController2 : MonoBehaviour
     {
         //baddieCol.gameObject.SetActive(false); // 隐藏敌人对象
         m_NumberOfRemainingPlayers--; // 减少剩余玩家数量
-        agent.gameObject.SetActive(false); // 隐藏玩家对象
+        if (m_NumberOfRemainingPlayers == 0 || agent.IHaveAKey)
+        {
+            m_AgentGroup.EndGroupEpisode(); // 结束当前回合
+            ResetScene(); // 重置场景
+        }
+        else
+        {
+            agent.gameObject.SetActive(false); // 隐藏玩家对象
+        }
         //Debug.Log($"{baddieCol.gameObject.name} ate {agent.transform.name}");
 
         // 显示墓碑
@@ -282,6 +290,8 @@ public class DungeonEscapeEnvController2 : MonoBehaviour
         //随机按钮位置
         CreateSwitch();
 
+        //重置按钮状态
+        SwitchTriggered = false;
         // 重置所有敌人
         // 遍历所有敌人（龙）信息，重置每个敌人的状态
         foreach (var item in DragonsList)

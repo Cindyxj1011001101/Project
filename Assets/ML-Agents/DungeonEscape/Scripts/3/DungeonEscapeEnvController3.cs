@@ -81,6 +81,7 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
 
         // 隐藏钥匙
         Key.SetActive(false);
+        Tombstone.SetActive(false);
 
         // 初始化多智能体组
         m_AgentGroup = new SimpleMultiAgentGroup();
@@ -158,7 +159,15 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
     {
         //baddieCol.gameObject.SetActive(false); // 隐藏敌人对象
         m_NumberOfRemainingPlayers--; // 减少剩余玩家数量
-        agent.gameObject.SetActive(false); // 隐藏玩家对象
+        if (m_NumberOfRemainingPlayers == 0 || agent.IHaveAKey)
+        {
+            m_AgentGroup.EndGroupEpisode(); // 结束当前回合
+            ResetScene(); // 重置场景
+        }
+        else
+        {
+            agent.gameObject.SetActive(false); // 隐藏玩家对象
+        }
         //Debug.Log($"{baddieCol.gameObject.name} ate {agent.transform.name}");
 
         // 显示墓碑
@@ -184,11 +193,11 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
     public void CreateDragon()
     {
         // 如果当前敌人对象为空（已被销毁），则直接返回，防止空引用异常
-        if (!DragonsList[DragonsList.Count-1].Agent)
-            return;
+        // if (!DragonsList[DragonsList.Count-1].Agent)
+        //     return;
 
         // 将敌人的位置和旋转重置为初始值
-        DragonsList[DragonsList.Count-1].Agent.transform.SetPositionAndRotation(DragonsList[DragonsList.Count-1].StartingPos, DragonsList[DragonsList.Count-1].StartingRot);
+        DragonsList[DragonsList.Count-1].Agent.transform.SetPositionAndRotation(GetRandomSpawnPos(),GetRandomRot());
 
         // 设置敌人的随机行走速度，增加训练多样性
         DragonsList[DragonsList.Count-1].Agent.SetRandomWalkSpeed();
@@ -304,6 +313,10 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
         // 隐藏墓碑
         Tombstone.SetActive(false);
 
+        //重置按钮状态
+        Switch1Triggered = false;
+        Switch2Triggered = false;
+
         //随机按钮位置
         CreateSwitch1();
         CreateSwitch2();
@@ -325,6 +338,12 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
 
                 // 激活敌人对象，使其重新参与本轮训练
                 DragonsList[i].Agent.gameObject.SetActive(true);
+            }
+            else//最后一只龙禁用
+            { // 如果当前敌人对象为空（已被销毁），则直接返回，防止空引用异常
+                if (!DragonsList[i].Agent)
+                    return;
+                DragonsList[i].Agent.gameObject.SetActive(false);
             }
 
         }

@@ -275,7 +275,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0247e0149942b4282becdb342cf1b6e2, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 3aebecd1f65488240a3f10c5ef8c384f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DungeonEscape
@@ -972,7 +972,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0247e0149942b4282becdb342cf1b6e2, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 3aebecd1f65488240a3f10c5ef8c384f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DungeonEscape
@@ -1727,7 +1727,7 @@ Transform:
   m_GameObject: {fileID: 758919683}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.17, y: 0, z: -0.05}
+  m_LocalPosition: {x: -6.3, y: 0, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1781,7 +1781,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.73393774, g: 0, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 10
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2258,7 +2258,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.73393774, g: 0, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 10
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2801,7 +2801,7 @@ Transform:
   m_GameObject: {fileID: 1077611320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 0, z: -4.18}
+  m_LocalPosition: {x: 0.04, y: 0, z: -7.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3603,7 +3603,7 @@ Transform:
   m_GameObject: {fileID: 1473526381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.23, y: 0, z: -0.76}
+  m_LocalPosition: {x: 7.56, y: 0, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3742,7 +3742,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.73393774, g: 0, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 10
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4035,7 +4035,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.73393774, g: 0, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 10
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4262,7 +4262,7 @@ Transform:
   m_GameObject: {fileID: 1660562537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0, z: 4}
+  m_LocalPosition: {x: 0.17, y: 0, z: 7.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6244,7 +6244,7 @@ MonoBehaviour:
   UseRandomAgentPosition: 1
   Key: {fileID: 6560354527844713900}
   Tombstone: {fileID: 6108088255477627722}
-  KeyTimer: 0
+  KeyTimer: 3
 --- !u!4 &4643237306651462
 Transform:
   m_ObjectHideFlags: 0
@@ -6270,7 +6270,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.01, y: 0.07, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4006991767121726}
@@ -7034,7 +7034,7 @@ Transform:
   m_GameObject: {fileID: 8208719278650273853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.66, y: 0, z: -8.2}
+  m_LocalPosition: {x: 10.26, y: 0, z: -10.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8716,7 +8716,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0247e0149942b4282becdb342cf1b6e2, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 3aebecd1f65488240a3f10c5ef8c384f, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DungeonEscape
@@ -9297,7 +9297,7 @@ Transform:
   m_GameObject: {fileID: 6640807270257874681}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 0, z: 7.8}
+  m_LocalPosition: {x: 11.01, y: 0, z: 10.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10816,7 +10816,7 @@ Transform:
   m_GameObject: {fileID: 451355310634712920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.78, y: 0, z: 7.88}
+  m_LocalPosition: {x: -10.5, y: 0, z: 10.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10923,7 +10923,7 @@ Transform:
   m_GameObject: {fileID: 7252038608646948702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.79, z: 8}
+  m_LocalPosition: {x: -8.5, y: 0.79, z: 10}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11932,7 +11932,7 @@ Transform:
   m_GameObject: {fileID: 7360942613594786907}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.53, y: 0, z: -7.43}
+  m_LocalPosition: {x: -10.5, y: 0, z: -10.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

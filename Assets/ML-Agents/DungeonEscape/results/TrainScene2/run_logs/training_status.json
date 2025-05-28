@@ -1,0 +1,65 @@
+{
+    "DungeonEscape": {
+        "checkpoints": [
+            {
+                "steps": 6499994,
+                "file_path": "results\\TrainScene2\\DungeonEscape\\DungeonEscape-6499994.onnx",
+                "reward": 0.0,
+                "creation_time": 1748190193.1102111,
+                "auxillary_file_paths": [
+                    "results\\TrainScene2\\DungeonEscape\\DungeonEscape-6499994.pt"
+                ]
+            },
+            {
+                "steps": 6999968,
+                "file_path": "results\\TrainScene2\\DungeonEscape\\DungeonEscape-6999968.onnx",
+                "reward": 0.0,
+                "creation_time": 1748191133.6787724,
+                "auxillary_file_paths": [
+                    "results\\TrainScene2\\DungeonEscape\\DungeonEscape-6999968.pt"
+                ]
+            },
+            {
+                "steps": 7499981,
+                "file_path": "results\\TrainScene2\\DungeonEscape\\DungeonEscape-7499981.onnx",
+                "reward": 0.0,
+                "creation_time": 1748192065.188745,
+                "auxillary_file_paths": [
+                    "results\\TrainScene2\\DungeonEscape\\DungeonEscape-7499981.pt"
+                ]
+            },
+            {
+                "steps": 7999999,
+                "file_path": "results\\TrainScene2\\DungeonEscape\\DungeonEscape-7999999.onnx",
+                "reward": 0.0,
+                "creation_time": 1748193010.8195126,
+                "auxillary_file_paths": [
+                    "results\\TrainScene2\\DungeonEscape\\DungeonEscape-7999999.pt"
+                ]
+            },
+            {
+                "steps": 8256182,
+                "file_path": "results\\TrainScene2\\DungeonEscape\\DungeonEscape-8256182.onnx",
+                "reward": 0.0,
+                "creation_time": 1748193496.1067772,
+                "auxillary_file_paths": [
+                    "results\\TrainScene2\\DungeonEscape\\DungeonEscape-8256182.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 8256182,
+            "file_path": "results\\TrainScene2\\DungeonEscape.onnx",
+            "reward": 0.0,
+            "creation_time": 1748193496.1067772,
+            "auxillary_file_paths": [
+                "results\\TrainScene2\\DungeonEscape\\DungeonEscape-8256182.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.10.2+cpu"
+    }
+}
