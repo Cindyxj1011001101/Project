@@ -196,6 +196,8 @@ public class DungeonEscapeEnvController3 : MonoBehaviour
         // if (!DragonsList[DragonsList.Count-1].Agent)
         //     return;
 
+        //设置设置按钮触发
+        Switch2Triggered = true;
         // 将敌人的位置和旋转重置为初始值
         DragonsList[DragonsList.Count-1].Agent.transform.SetPositionAndRotation(GetRandomSpawnPos(),GetRandomRot());
 
