@@ -23,11 +23,6 @@ public class SimpleNPC1 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update 方法每帧调用一次，适合处理与时间相关的更新逻辑（当前未使用）。
-    void Update()
-    {
-        // 当前没有在此处执行任何操作。
-    }
 
     // FixedUpdate 方法在物理引擎更新时调用，适合处理物理相关操作。
     void FixedUpdate()
